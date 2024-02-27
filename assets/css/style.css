@@ -19,11 +19,12 @@ html {
   --color-brown: #302925;
   --color-light-brown: rgba(48, 41, 37, 0.67);
   --color-white: #ffffff;
+  --color-active: #f39e84;
 
   --container-width-lg: 120rem;
 
-  --main-font: "Forum", sans-serif, serif;
-  --secondary-font: "Plus Jakarta Sans", sans-serif, serif;
+  --main-font: "Plus Jakarta Sans", sans-serif, serif;
+  --secondary-font: "Forum", sans-serif, serif;
   --third-font: "Playfair Display SC", sans-serif, serif;
   --fourth-font: "Waterfall", sans-serif, serif;
   --fourth-five: "Whisper", cursive, sans-serif, serif;
@@ -49,7 +50,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--main-font);
+  font-family: var(--secondary-font);
   font-size: 6.4rem;
   font-weight: 400;
   line-height: 110%;
@@ -72,8 +73,8 @@ h4 {
 }
 
 .container {
-  width: 100%;
   max-width: var(--container-width-lg);
+  width: 80%;
   margin: 0 auto;
 }
 

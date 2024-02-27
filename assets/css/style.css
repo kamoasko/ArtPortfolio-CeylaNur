@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  /* 10/16*100%=62.5% --> 1rem=10px */
+  font-size: 62.5%;
+}
+
+:root {
+  --color-main: #9dbbc9;
+  --color-brown: #302925;
+  --color-light-brown: rgba(48, 41, 37, 0.67);
+  --color-white: #ffffff;
+
+  --container-width-lg: 120rem;
+
+  --main-font: "Forum", sans-serif, serif;
+  --secondary-font: "Plus Jakarta Sans", sans-serif, serif;
+  --third-font: "Playfair Display SC", sans-serif, serif;
+  --fourth-font: "Waterfall", sans-serif, serif;
+  --fourth-five: "Whisper", cursive, sans-serif, serif;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: 0.02em;
+
+  background-color: var(--color-white);
+  color: var(--color-brown);
+}
+
+h1 {
+  font-family: var(--third-font);
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: 119%;
+}
+
+h2 {
+  font-family: var(--main-font);
+  font-size: 6.4rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+h3 {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 93%;
+  letter-spacing: -1.786px;
+}
+
+h4 {
+  font-family: var(--secondary-font);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem; /* 116.667% */
+  letter-spacing: -1.071px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* @media (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    line-height: -1.786px;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+} */

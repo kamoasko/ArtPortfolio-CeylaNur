@@ -178,6 +178,7 @@
 }
 
 .header__logo-img {
+  display: block;
   width: 29.2rem;
   margin: 0 auto;
 }
@@ -226,6 +227,7 @@
     position: absolute;
     top: 9.4rem;
     width: 100%;
+    height: 100vh;
     transition: 0.4s all ease;
     padding: 1.7rem 0;
   }
@@ -240,14 +242,22 @@
     display: none;
   }
 
+  .header__logo-img {
+    width: 23rem;
+  }
+
   .navbar.active {
     opacity: 1;
   }
 
-  .navbar.active .navbar__menu {
+  .navbar .navbar__menu {
     flex-direction: column;
     row-gap: 3.4rem;
     justify-content: stretch;
+  }
+
+  body:has(.navbar.active) {
+    overflow: hidden;
   }
 
   .navbar.active .navbar__menu .header__top-socials {

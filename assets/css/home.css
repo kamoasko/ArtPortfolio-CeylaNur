@@ -1,0 +1,53 @@
+.biography {
+  margin-top: 4.4rem;
+}
+
+.biography__wrapper {
+  display: flex;
+  column-gap: 3.8rem;
+}
+
+.biography__wrapper > div {
+  flex: 1;
+}
+
+.biography__detail > h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+}
+
+.biography__detail > h1 > span {
+  align-self: flex-end;
+}
+
+.biography__detail > p {
+  text-align: justify;
+  margin-top: 5.5rem;
+}
+
+.picture__name {
+  margin-top: 1.6rem;
+  line-height: 160%;
+  column-gap: 0.6rem;
+}
+
+.picture__name > span:first-child {
+  font-family: var(--secondary-font);
+}
+
+.picture__name > span:last-child {
+  font-size: 1.6rem;
+  color: rgba(48, 41, 37, 0.67);
+}
+
+@media (max-width: 992px) {
+  .biography__wrapper {
+    flex-direction: column;
+    row-gap: 9rem;
+  }
+
+  .biography__img {
+    order: -1;
+  }
+}

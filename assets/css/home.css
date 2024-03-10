@@ -1,14 +1,26 @@
+/* biography */
+
 .biography {
   margin-top: 4.4rem;
 }
 
 .biography__wrapper {
-  display: flex;
   column-gap: 3.8rem;
+}
+
+.bw2 {
+  margin-top: 6rem;
+  justify-content: flex-start;
+  column-gap: 5.8rem;
+  max-width: 98.8rem;
 }
 
 .biography__wrapper > div {
   flex: 1;
+}
+
+.bw2 > .biography__detail {
+  flex: 2;
 }
 
 .biography__detail > h1 {
@@ -26,6 +38,39 @@
   margin-top: 5.5rem;
 }
 
+.biography__img div:first-child {
+  position: relative;
+}
+
+.wp_contact {
+  display: none;
+  background-color: var(--color-white);
+  box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.14),
+    2px 11px 11px 0 rgba(0, 0, 0, 0.12), 5px 24px 15px 0 rgb(0, 0, 0, 0.07),
+    10px 42px 17px 0 rgba(0, 0, 0, 0.02), 15px 66px 19px 0 rgba(0, 0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  transform: translateY(50%);
+  border-radius: 0.6rem;
+  width: 13.9rem;
+  height: 3.5rem;
+  column-gap: 1.4rem;
+  color: var(--color-green);
+  font-family: var(--sixth-font);
+  font-size: 2rem;
+}
+
+.wp_contact:hover {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.biography__img_hgt {
+  flex: 1;
+  height: 42rem;
+}
+
 .picture__name {
   margin-top: 1.6rem;
   line-height: 160%;
@@ -41,13 +86,349 @@
   color: rgba(48, 41, 37, 0.67);
 }
 
+/* about */
+
+.about__top {
+  margin-top: 12rem;
+}
+
+.about__top > div > p {
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+  max-width: 61.3rem;
+  line-height: 176%;
+}
+
+.about__top > div > p > span {
+  font-size: 6.4rem;
+  font-family: var(--fifth-font);
+}
+
+.about__bottom {
+  margin-top: 6rem;
+  column-gap: 12.7rem;
+}
+
+.about__bottom > div {
+  flex: 1;
+}
+
+.about__bottom-video {
+  height: 71.6rem;
+}
+
+.about__bottom-details p {
+  margin-top: 7.2rem;
+}
+
+.about__bottom-details a {
+  margin-top: 8.5rem;
+}
+
+.about__videos {
+  height: 74.3rem;
+  margin-top: 8.7rem;
+  gap: 3rem;
+}
+
+.about__video {
+  flex: 1;
+  height: 48rem;
+}
+
+.abv1 {
+  align-self: flex-end;
+}
+
+.abv2 {
+  align-self: center;
+}
+
+.abv3 {
+  align-self: flex-start;
+}
+
+/* orders */
+
+.orders__wrapper {
+  margin-top: 20rem;
+  gap: 10rem;
+}
+
+.orders__wrapper > div {
+  flex: 1;
+}
+
+.orders__details {
+  gap: 7rem;
+}
+
+.orders__details p {
+  font-size: 1.8rem;
+  line-height: 170%;
+  max-width: 42.4rem;
+}
+
+.orders__img {
+  height: 53.3rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* collections */
+
+.collections__title {
+  margin-top: 19.3rem;
+  text-align: center;
+}
+
+.collections__title h2 {
+  font-family: var(--third-font);
+  font-size: clamp(3.2rem, 5vw, 5.3rem);
+}
+
+.collections__title > h2 > span {
+  font-family: var(--fourth-font);
+  font-size: clamp(6.4rem, 10vw, 12.8rem);
+}
+
+.collections > .container > div:nth-child(2) {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.collections__img {
+  margin-top: 5.2rem;
+  position: relative;
+}
+
+.status {
+  font-size: clamp(1.4rem, 5vw, 2.4rem);
+  position: absolute;
+  top: 0;
+  left: 0.5%;
+  transform: translateY(-75%);
+  background-color: var(--color-main);
+  color: var(--color-white);
+  width: 15.2rem;
+  height: 4.1rem;
+}
+
+.collections__links {
+  margin-top: 6.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 27.5rem), 1fr));
+  column-gap: 3rem;
+  row-gap: 6rem;
+}
+
+.collections__link {
+  text-align: center;
+  background-color: var(--color-main);
+  height: 8rem;
+  color: var(--color-white);
+  font-family: var(--secondary-font);
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  transition: 300ms;
+}
+
+.collections__link:hover {
+  background-color: transparent;
+  color: var(--color-brown);
+  border: 0.1rem solid var(--color-brown);
+}
+
+.collections__products {
+  margin-top: 16rem;
+  gap: 7.4rem;
+}
+
+.collections__art {
+  position: relative;
+}
+
+/* contact */
+
+.contact__top {
+  margin-top: 16rem;
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+
+.contact__details {
+  margin-top: 3rem;
+  row-gap: 2.4rem;
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+}
+
+.contact__details h4 {
+  font-size: inherit;
+}
+
+.contact__socials {
+  column-gap: 4rem;
+  font-size: 2.4rem;
+  color: var(--color-main);
+}
+
+.contact__form {
+  margin: 6.5rem auto 0;
+  max-width: 79.4rem;
+}
+
+.contact__form-inputs {
+  column-gap: 8rem;
+  height: 4rem;
+  width: 100%;
+  /* justify-content: space-between; */
+}
+
+.contact__form-inputs > input,
+.contact__form textarea {
+  border: 0.1rem solid var(--color-main);
+  border-radius: 0.6rem;
+  padding: 1rem 2rem;
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+}
+
+.contact__form-inputs > input {
+  flex: 1;
+  height: 100%;
+}
+
+.contact__form > textarea {
+  margin-top: 4.1rem;
+  width: 100%;
+  resize: none;
+  height: 30rem;
+}
+
+.contact__form > button {
+  margin-top: 2rem;
+  background-color: var(--color-main);
+  border: 0;
+  color: var(--color-white);
+  margin-left: auto;
+}
+
+/* responsive */
+
+@media (max-width: 1024px) {
+  .about__bottom {
+    column-gap: 2.1rem;
+  }
+
+  .about__bottom-video {
+    height: 52rem;
+  }
+
+  .about__bottom-details p {
+    margin-top: 6.8rem;
+  }
+
+  .about__bottom-details a {
+    margin-top: 7rem;
+  }
+
+  .orders__wrapper {
+    gap: 2rem;
+  }
+
+  .orders__details {
+    gap: 4rem;
+  }
+
+  .orders__img {
+    height: 43.2rem;
+  }
+}
+
 @media (max-width: 992px) {
   .biography__wrapper {
     flex-direction: column;
     row-gap: 9rem;
   }
 
+  .bw2 {
+    column-gap: 3rem;
+    flex-direction: row;
+  }
+  .biography__detail h1 {
+    gap: 2rem;
+  }
+
   .biography__img {
     order: -1;
+  }
+
+  .about__top {
+    display: none;
+  }
+
+  .about__bottom-video {
+    order: 2;
+  }
+
+  .about__video {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .picture__name {
+    flex-direction: column;
+  }
+
+  .wp_contact {
+    display: flex;
+  }
+
+  .bw2 {
+    flex-direction: column;
+  }
+
+  .about__bottom {
+    flex-direction: column;
+  }
+
+  .about__bottom-video {
+    order: 0;
+    height: 45.6rem;
+  }
+
+  .about__bottom-details {
+    margin-top: 7.4rem;
+  }
+
+  .about__videos {
+    flex-direction: column;
+    gap: 12rem;
+  }
+
+  .about__video {
+    height: 36.5rem;
+    width: 100%;
+    align-self: center;
+  }
+
+  .orders__wrapper {
+    margin-top: 68rem;
+    flex-direction: column;
+    gap: 5.4rem;
+  }
+
+  .collections__products {
+    flex-direction: column;
+  }
+
+  .contact__form > textarea {
+    margin-top: 9rem;
+    height: 21.3rem;
+  }
+
+  .contact__form-inputs {
+    flex-wrap: wrap;
+    row-gap: 2.5rem;
   }
 }

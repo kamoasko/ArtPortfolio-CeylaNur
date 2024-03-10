@@ -10,6 +10,11 @@
     />
 
     <link
+      href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       href="https://fonts.cdnfonts.com/css/forum?styles=15505,169705"
       rel="stylesheet"
     />
@@ -29,9 +34,9 @@
     <header class="header">
       <div class="page_top">
         <div class="container">
-          <div class="header__top flex">
-            <div class="header__top-socials">
-              <ul class="flex">
+          <div class="header__top flex align-items-center">
+            <div class="socials">
+              <ul class="flex align-items-center">
                 <li>
                   <a href=""><i class="fa-brands fa-facebook"></i></a>
                 </li>
@@ -39,13 +44,13 @@
                   <a href=""><i class="fa-brands fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href=""><i class="fa-brands fa-telegram"></i></a>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
                 </li>
                 <li>
                   <a href=""><i class="fa-brands fa-youtube"></i></a>
                 </li>
-                <li>
-                  <a href="">
+                <li class="flex-center">
+                  <a href="https://api.whatsapp.com/send?phone=994776432457">
                     <svg
                       width="24"
                       height="24"
@@ -66,7 +71,7 @@
             </div>
             <div class="header__top-langs">
               <ul>
-                <li class="flex">
+                <li class="flex align-items-center">
                   AZE <i class="fa-solid fa-caret-down"></i>
                   <ul>
                     <li>AZE</li>
@@ -77,7 +82,7 @@
               </ul>
             </div>
             <nav class="header__top-nav">
-              <ul class="header__top-menu flex justify-content-center">
+              <ul class="header__top-menu flex-center">
                 <li><a href="">Ana səhifə</a></li>
                 <li><a href="">Haqqimda</a></li>
                 <li><a href="">Xidmətlər</a></li>
@@ -85,7 +90,7 @@
                 <li><a href="">Əlaqə</a></li>
               </ul>
             </nav>
-            <div class="plate plate1 flex justify-content-center">
+            <div class="plate plate1 flex-center">
               <svg
                 class="burger"
                 version="1.1"
@@ -122,16 +127,17 @@
           <img src="./assets/imgs/logo.png" alt="Logo" />
         </a>
       </div>
+      <div class="page_name">Ana səhifə</div>
       <div class="header__bottom">
         <nav class="navbar">
-          <ul class="navbar__menu flex">
+          <ul class="navbar__menu flex align-items-center">
             <li class="active"><a href="./index.html">Ana səhifə</a></li>
             <li><a href="./about.html">Haqqimda</a></li>
             <li><a href="./services.html">Xidmətlər</a></li>
             <li><a href="./galery.html">Qalereyam</a></li>
             <li><a href="./contact.html">Əlaqə</a></li>
-            <div class="header__top-socials">
-              <ul class="flex">
+            <div class="socials">
+              <ul class="flex align-items-center">
                 <li>
                   <a href=""><i class="fa-brands fa-facebook"></i></a>
                 </li>
@@ -168,10 +174,12 @@
         </nav>
       </div>
     </header>
+
     <main>
+      <!-- Biography -->
       <section class="biography">
         <div class="container">
-          <div class="biography__wrapper">
+          <div class="biography__wrapper flex">
             <div class="biography__detail">
               <h1>Ceylanur <span>Nuriyeva</span></h1>
               <p>
@@ -182,18 +190,352 @@
               </p>
             </div>
             <div class="biography__img">
-              <img src="./assets/imgs/biography-img.png" alt="" />
-              <div class="picture__name flex">
+              <div>
+                <img src="./assets/imgs/biography-img.png" alt="" />
+                <a
+                  class="wp_contact flex-center"
+                  href="https://api.whatsapp.com/send?phone=994776432457"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+              </div>
+              <div class="picture__name flex align-items-center">
                 <span>001 - Freedom</span>
                 <span>Mural and graffiti artwork</span>
               </div>
             </div>
           </div>
-          <div class="biography__wrapper"></div>
+          <div class="biography__wrapper bw2 flex">
+            <div class="biography__img biography__img_hgt">
+              <img src="./assets/imgs/homepage/yagli-boya.png" alt="" />
+              <div class="picture__name flex align-items-center">
+                <span>002 - Freedom</span>
+                <span>Mural and graffiti artwork</span>
+              </div>
+            </div>
+            <div class="biography__detail">
+              <h2>Yağlı boya ilə rəsm</h2>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus errorsit voluptatem
+                accusantium doloremquelaudantium, totam rem aperiam eaque
+                ips.Sed ut perspiciatis unde omnis iste natus errosit voluptatem
+                accusantium doloremquelaudantium, totam rem aperiam eaque ips.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+      <!-- About -->
+      <section class="about">
+        <div class="container">
+          <div class="about__top">
+            <h2>Haqqımda — Mənim Tarixçəm</h2>
+            <div>
+              <p>
+                Unleashing creativity, painting <span> Abstrakt </span>.
+                Boundaries captivating shattered, abstracts awaken limitless
+                creative possibilities.
+              </p>
+            </div>
+          </div>
+          <div class="about__bottom flex align-items-center">
+            <div class="about__bottom-video">
+              <video controls muted autoplay="false" name="media">
+                <source
+                  src="./assets/imgs/homepage/about_video.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="about__bottom-details">
+              <h3>Ceylanur Nuriyeva</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam eaque ips.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugi sed quiadet consequuntur magni dolores eos qui.
+              </p>
+              <a href="./about.html" class="btn flex-center">Daha çox</a>
+            </div>
+          </div>
+
+          <div class="about__videos flex">
+            <div class="about__video abv1">
+              <video controls autoplay muted name="media">
+                <source
+                  src="./assets/imgs/homepage/about_video.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="picture__name flex align-items-center">
+                <span>002 - Freedom</span>
+                <span>Mural and graffiti artwork</span>
+              </div>
+            </div>
+            <div class="about__video abv2">
+              <video controls autoplay muted name="media">
+                <source
+                  src="./assets/imgs/homepage/about_video.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="picture__name flex align-items-center">
+                <span>002 - Freedom</span>
+                <span>Mural and graffiti artwork</span>
+              </div>
+            </div>
+            <div class="about__video abv3">
+              <video controls autoplay muted name="media">
+                <source
+                  src="./assets/imgs/homepage/about_video.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="picture__name flex align-items-center">
+                <span>002 - Freedom</span>
+                <span>Mural and graffiti artwork</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Orders -->
+      <section class="orders">
+        <div class="container">
+          <div class="orders__wrapper flex align-items-center">
+            <div class="orders__details flex flex-direct-col">
+              <h2>Rəsimlərin sifarişi</h2>
+              <div>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugi sed quiadet consequuntur magni dolores eos
+                  qui.Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                  aut odit aut fugi sed quiadet consequuntur magni dolores eos
+                  qui.
+                </p>
+              </div>
+              <a href="./order.html" class="btn flex-center">Sifariş Et</a>
+            </div>
+            <div class="orders__img">
+              <img src="./assets/imgs/homepage/orders-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Collections -->
+      <section class="collections">
+        <div class="container">
+          <div class="collections__title">
+            <h2>Möhtəşəm <span>Əsərlərimin</span> kolleksiyası.</h2>
+          </div>
+          <div>Sed ut perspiciatis unde omnis istemed</div>
+          <div class="collections__img">
+            <img src="./assets/imgs/homepage/collections-img.png" alt="" />
+            <div class="picture__name flex align-items-center">
+              <span>001 - Freedom</span>
+              <span>Mural and graffiti artwork</span>
+            </div>
+            <span class="status flex-center">Satilib</span>
+          </div>
+          <div class="collections__links">
+            <a href="./galery.html" class="collections__link flex-center">
+              Qallereyam
+            </a>
+            <a href="./galery.html" class="collections__link flex-center">
+              Portretlər
+            </a>
+            <a href="./galery.html" class="collections__link flex-center">
+              Workshop/ArtClaases
+            </a>
+            <a href="./galery.html" class="collections__link flex-center">
+              Rəngli qələm texnikasi
+            </a>
+            <a href="./galery.html" class="collections__link flex-center">
+              Məhşurlar
+            </a>
+            <a href="./galery.html" class="collections__link flex-center">
+              Qallereyam
+            </a>
+          </div>
+          <div class="collections__products flex-center">
+            <div class="collections__art">
+              <img src="./assets/imgs/homepage/collection-art-img.png" alt="" />
+              <div class="picture__name flex align-items-center">
+                <span>001 - Freedom</span>
+                <span>Mural and graffiti artwork</span>
+              </div>
+              <span class="status flex-center">Mövcuddur</span>
+            </div>
+            <div class="collections__art">
+              <img
+                src="./assets/imgs/homepage/collection-art-img1.png"
+                alt=""
+              />
+              <div class="picture__name flex align-items-center">
+                <span>001 - Freedom</span>
+                <span>Mural and graffiti artwork</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact">
+        <div class="container">
+          <div class="contact__top">
+            <h2>Mənimlə Əlaqə saxla</h2>
+            <div class="contact__details flex flex-direct-col">
+              <a href="mailto:jelanurnur@gmai.com" target="_blank">
+                jelanurnur@gmail.com
+              </a>
+              <a href="tel:994515592821">+994 051 559 28 21</a>
+              <h4>Sosial şəbəkələrdən əlaqə:</h4>
+              <ul class="contact__socials flex-center">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact__bottom">
+            <form action="" class="contact__form">
+              <div class="contact__form-inputs flex align-items-center">
+                <input type="text" name="" id="" placeholder="Ad:" />
+                <input type="email" name="" id="" placeholder="Email:" />
+              </div>
+              <textarea name="" id="" placeholder="Mesajiniz"></textarea>
+              <button class="flex-center btn">Gonder</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="backdrop flex-center flex-direct-col">
+        <div class="modal">
+          <div class="modal__img">
+            <img src="./assets/imgs/homepage/modal-img.png" alt="" />
+            <button id="modal_close" type="button">
+              <svg
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="14.9668"
+                  y="11.0234"
+                  width="37"
+                  height="2"
+                  rx="1"
+                  transform="rotate(50.5995 14.9668 11.0234)"
+                  fill="#D9D9D9"
+                />
+                <rect
+                  x="38.5898"
+                  y="12.4219"
+                  width="37"
+                  height="2"
+                  rx="1"
+                  transform="rotate(129.984 38.5898 12.4219)"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal__content">
+            <h3>Müraciət QƏBUL OLUNDU YAXİN ZAMANDA ƏLAQƏ SAXLANALACAQ</h3>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <ul class="footer__navmenu flex">
+            <li>
+              <h4>Linklər</h4>
+              <ul class="flex">
+                <li><a href="./galery.html">Qallereya</a></li>
+                <li><a href="./index.html">Ana səifə</a></li>
+                <li><a href="./about.html">Haqqımda</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Sosial</h4>
+              <ul class="flex">
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Whathhap</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Legal</h4>
+              <ul class="flex">
+                <li><a href="./galery.html">Müəllif hüququ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-wrapper flex align-items-center">
+            <div>Bizi burada izlyə və əlagəyə girə bilersiz</div>
+            <div class="socials">
+              <ul class="flex align-items-center">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="flex-center">
+                  <a href="https://api.whatsapp.com/send?phone=994776432457">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.9852 16.9453C18.696 17.764 17.5464 18.4412 16.6296 18.6393C16.002 18.7725 15.1836 18.8779 12.426 17.7352C9.3288 16.452 5.028 11.8812 5.028 8.83945C5.028 7.29099 5.9208 5.48789 7.482 5.48789C8.2332 5.48789 8.3988 5.50254 8.646 6.09551C8.9352 6.79412 9.64081 8.51535 9.7248 8.6918C10.0716 9.41561 9.37199 9.83934 8.86439 10.4695C8.70239 10.6592 8.51881 10.8643 8.72401 11.2172C8.92801 11.5629 9.6336 12.7129 10.6704 13.6359C12.0096 14.8291 13.0956 15.21 13.4844 15.3721C13.7736 15.4921 14.1192 15.4641 14.3304 15.2385C14.598 14.9492 14.9304 14.4692 15.2688 13.9963C15.5076 13.6578 15.8112 13.6155 16.1292 13.7355C16.344 13.81 19.074 15.0778 19.1892 15.2807C19.2744 15.4283 19.2744 16.1267 18.9852 16.9453ZM12.0024 0H11.9964C5.38079 0 0 5.38242 0 12C0 14.624 0.846008 17.0584 2.28481 19.033L0.789606 23.492L5.40121 22.0184C7.29841 23.2739 9.5628 24 12.0024 24C18.618 24 24 18.6176 24 12C24 5.38242 18.618 0 12.0024 0Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__copy">
+              Bu saytın hüquqları
+              <a href="https://webcoder.az/" target="_blank">Web-coder</a>
+              tərəfindən qorunur
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./assets/js/general.js"></script>
   </body>

@@ -26,6 +26,7 @@ html {
   --color-light-brown: rgba(48, 41, 37, 0.67);
   --color-white: #ffffff;
   --color-active: #f39e84;
+  --color-green: #29bb5b;
 
   --container-width-lg: 120rem;
 
@@ -34,6 +35,7 @@ html {
   --third-font: "Playfair Display SC", sans-serif, serif;
   --fourth-font: "Waterfall", sans-serif, serif;
   --fifth-font: "Whisper", cursive, sans-serif, serif;
+  --sixth-font: "Katibeh", sans-serif, serif;
 }
 
 body {
@@ -50,14 +52,14 @@ body {
 
 h1 {
   font-family: var(--third-font);
-  font-size: 8rem;
+  font-size: clamp(4.8rem, 10vw, 9.6rem);
   font-weight: 400;
   line-height: 119%;
 }
 
 h2 {
   font-family: var(--secondary-font);
-  font-size: 6.4rem;
+  font-size: clamp(3.6rem, 5vw, 6.4rem);
   font-weight: 400;
   line-height: 110%;
 }
@@ -65,7 +67,7 @@ h2 {
 h3 {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 48px;
+  font-size: clamp(3.2rem, 5vw, 4.8rem);
   line-height: 93%;
   letter-spacing: -1.786px;
 }
@@ -84,7 +86,8 @@ h4 {
   margin: 0 auto;
 }
 
-img {
+img,
+video {
   display: block;
   width: 100%;
   height: 100%;
@@ -93,6 +96,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button {

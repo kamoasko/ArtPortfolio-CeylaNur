@@ -280,6 +280,10 @@
   margin-top: 3rem;
 }
 
+.footer__navmenu > li > ul > li > a:hover {
+  color: var(--color-active);
+}
+
 .footer__bottom {
   padding: 1.8rem 0;
   background-color: var(--color-main);
@@ -301,6 +305,7 @@
 
 .footer__copy a:hover {
   text-decoration: initial;
+  color: var(--color-active);
 }
 
 /* contact */
@@ -419,6 +424,25 @@
   z-index: 10;
   /* color: rgb(217, 217, 217); */
   /* font-size: 2.5rem; */
+}
+
+/* copyrights */
+.copy__details {
+  margin-top: 7.8rem;
+  row-gap: 5.5rem;
+}
+
+.copy__details h3,
+.copy__details h4 {
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+
+.copy__details p {
+  font-family: var(--secondary-font);
+  text-align: justify;
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  line-height: 215%;
 }
 
 /* responsive */

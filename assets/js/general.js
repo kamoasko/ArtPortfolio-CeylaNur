@@ -23,17 +23,22 @@ const responsiveHamburger = () => {
 
 responsiveHamburger();
 
-// modal
+// navbar menu active class added active page
 
-let backdrop = document.querySelector(".backdrop");
-let closeModalBtn = document.querySelector("#modal_close");
+let navbarMenuLinks = document.querySelectorAll(".navbar__menu>li>a");
+let navbarMenuLis = document.querySelectorAll(".navbar__menu > li");
 
-function openModal() {
-  backdrop.classList.toggle("active");
+function addActiveClass() {
+  const routeName = window.location.pathname;
+  navbarMenuLis.forEach((li) => {
+    if (
+      routeName.slice(1, routeName.length - 5) === li.getAttribute("page-name")
+    ) {
+      li.classList.add("active");
+    } else {
+      li.classList.remove("active");
+    }
+  });
 }
 
-openModal();
-
-closeModalBtn.addEventListener("click", () => {
-  backdrop.classList.toggle("active");
-});
+addActiveClass();

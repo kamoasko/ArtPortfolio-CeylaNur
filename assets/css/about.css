@@ -45,7 +45,22 @@
 
 @media only screen and (max-width: 992px) {
   .about__part {
+    margin-top: 6.5rem;
+    gap: 4rem;
     flex-direction: column;
     align-items: center;
+  }
+
+  .abp2 {
+    flex-direction: column-reverse;
+  }
+
+  .about__part-detail > p {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+  }
+
+  .about__part-detail > button {
+    margin-top: 7rem;
   }
 }

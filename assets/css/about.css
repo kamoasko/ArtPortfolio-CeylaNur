@@ -1,0 +1,51 @@
+.about__part {
+  margin-top: 11.1rem;
+  gap: 6.2rem;
+}
+
+.about__part > div {
+  flex: 1;
+}
+
+.about__part-img {
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.about__part-detail {
+  max-width: 58.8rem;
+  text-align: justify;
+}
+
+.about__part-detail h1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__part-detail > h1 > span {
+  align-self: flex-end;
+}
+
+.about__part-detail > p {
+  font-size: 1.8rem;
+  margin-top: 9.4rem;
+}
+
+.about__part-detail > button {
+  margin-top: 17.1rem;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 992px) {
+  .about__part {
+    gap: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about__part {
+    flex-direction: column;
+    align-items: center;
+  }
+}

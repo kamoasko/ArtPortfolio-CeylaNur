@@ -24,6 +24,7 @@
 }
 
 .biography__detail > h1 {
+  font-weight: normal;
   display: flex;
   flex-direction: column;
   gap: 5.5rem;
@@ -117,6 +118,11 @@
   height: 71.6rem;
 }
 
+.about__bottom-details h3 {
+  font-weight: 700;
+  font-family: var(--secondary-font);
+}
+
 .about__bottom-details p {
   margin-top: 7.2rem;
 }
@@ -183,6 +189,7 @@
 }
 
 .collections__title h2 {
+  font-weight: 400;
   font-family: var(--third-font);
   font-size: clamp(3.2rem, 5vw, 5.3rem);
 }
@@ -223,6 +230,7 @@
 }
 
 .collections__link {
+  font-weight: 800;
   text-align: center;
   background-color: var(--color-main);
   height: 8rem;

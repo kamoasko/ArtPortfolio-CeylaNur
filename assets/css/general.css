@@ -250,6 +250,7 @@
 
 .navbar__menu > li > a {
   color: var(--color-brown);
+  font-weight: 800;
 }
 
 .navbar__menu > li.active > a,

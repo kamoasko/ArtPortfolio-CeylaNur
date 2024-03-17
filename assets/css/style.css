@@ -53,20 +53,20 @@ body {
 h1 {
   font-family: var(--third-font);
   font-size: clamp(4.8rem, 10vw, 9.6rem);
-  font-weight: 400;
+  font-weight: 800;
   line-height: 119%;
 }
 
 h2 {
   font-family: var(--secondary-font);
   font-size: clamp(3.6rem, 5vw, 6.4rem);
-  font-weight: 400;
+  font-weight: 800;
   line-height: 110%;
 }
 
 h3 {
   font-family: var(--main-font);
-  font-weight: 400;
+  font-weight: 800;
   font-size: clamp(3.2rem, 5vw, 4.8rem);
   line-height: 93%;
   letter-spacing: -1.786px;
@@ -75,7 +75,7 @@ h3 {
 h4 {
   font-family: var(--secondary-font);
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 2.8rem; /* 116.667% */
   letter-spacing: -1.071px;
 }

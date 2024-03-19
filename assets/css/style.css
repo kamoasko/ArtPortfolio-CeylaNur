@@ -46,6 +46,8 @@ body {
   font-weight: 400;
   line-height: 170%;
   letter-spacing: 0.02em;
+  font-smoothing: antialiased;
+   -webkit-font-smoothing: antialiased;
 
   background-color: var(--color-white);
   color: var(--color-brown);
@@ -55,8 +57,8 @@ h1 {
   font-family: var(--third-font);
   font-size: clamp(4.8rem, 10vw, 9.6rem);
   font-weight: 800;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+/*   -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; */
   line-height: 119%;
 }
 

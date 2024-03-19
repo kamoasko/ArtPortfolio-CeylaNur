@@ -55,6 +55,8 @@ h1 {
   font-family: var(--third-font);
   font-size: clamp(4.8rem, 10vw, 9.6rem);
   font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   line-height: 119%;
 }
 

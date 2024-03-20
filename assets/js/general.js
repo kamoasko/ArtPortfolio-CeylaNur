@@ -1,30 +1,35 @@
 "use strict";
 
 const sectionParts = document.querySelectorAll(".reveal");
+const firstSect = document.querySelector(".reveal_first");
 
-window.addEventListener("scroll", function () {
-  sectionParts.forEach((section) => {
-    const sectionTop = section.getBoundingClientRect().top;
+function reveal() {
+  firstSect.classList.add("is-visible");
+  window.addEventListener("scroll", function () {
     const windowHeight = window.innerHeight;
+    sectionParts.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if (sectionTop < windowHeight - 200) {
+        section.classList.add("is-visible");
 
-    if (sectionTop < windowHeight - 200) {
-      section.classList.add("is-visible");
+        const video = section.querySelector("video");
+        if (video) {
+          video.play();
+        }
+      } else {
+        // section.classList.remove("is-visible");
 
-      const video = section.querySelector("video");
-      if (video) {
-        video.play();
+        const video = section.querySelector("video");
+        if (video) {
+          video.pause();
+          video.currentTime = 0;
+        }
       }
-    } else {
-      // section.classList.remove("is-visible");
-
-      const video = section.querySelector("video");
-      if (video) {
-        video.pause();
-        video.currentTime = 0;
-      }
-    }
+    });
   });
-});
+}
+
+reveal();
 
 // hamburger menu tablet
 
@@ -52,11 +57,11 @@ responsiveHamburger();
 // navbar menu active class added active page
 
 let navbarMenuLinks = document.querySelectorAll(".navbar__menu>li>a");
-let navbarMenuLis = document.querySelectorAll(".navbar__menu > li");
+let navbarMenuList = document.querySelectorAll(".navbar__menu > li");
 
 function addActiveClass() {
   const routeName = window.location.pathname;
-  navbarMenuLis.forEach((li) => {
+  navbarMenuList.forEach((li) => {
     if (
       routeName.slice(1, routeName.length - 5) === li.getAttribute("page-name")
     ) {

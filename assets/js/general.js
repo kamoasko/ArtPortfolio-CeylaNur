@@ -54,6 +54,28 @@ const responsiveHamburger = () => {
 
 responsiveHamburger();
 
+// select langs
+
+let selectedLang = document.getElementById("selected_lang");
+let langOptions = document.querySelectorAll("#lang_option");
+
+function changeLanguage() {
+  langOptions.forEach((lang) => {
+    lang.addEventListener("click", (e) => {
+      e.stopPropagation();
+      let currentLang = e.target.innerText;
+      selectedLang.innerText = currentLang;
+      localStorage.setItem("lang", currentLang);
+    });
+    let savedLang = localStorage.getItem("lang");
+    if (savedLang) {
+      selectedLang.innerText = savedLang;
+    }
+  });
+}
+
+changeLanguage();
+
 // navbar menu active class added active page
 
 let navbarMenuLinks = document.querySelectorAll(".navbar__menu>li>a");

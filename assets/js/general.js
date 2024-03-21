@@ -2,6 +2,13 @@
 
 const sectionParts = document.querySelectorAll(".reveal");
 const firstSect = document.querySelector(".reveal_first");
+const collectionsSection = document.querySelector(".collections__title");
+const backdrop1 = document.querySelector(".backdrop1");
+const copyCloseButton = document.getElementById("copy_close");
+const copyrightCheckbox = document.querySelector(
+  "#copyrights input[type='checkbox']"
+);
+let modalClosed = false;
 
 function reveal() {
   firstSect.classList.add("is-visible");
@@ -16,6 +23,10 @@ function reveal() {
         if (video) {
           video.play();
         }
+
+        if (section === collectionsSection && !modalClosed) {
+          backdrop1.classList.add("active");
+        }
       } else {
         // section.classList.remove("is-visible");
 
@@ -27,9 +38,23 @@ function reveal() {
       }
     });
   });
+
+  if (copyCloseButton) {
+    copyCloseButton.disabled = true;
+    copyrightCheckbox.addEventListener("change", function () {
+      copyCloseButton.disabled = !this.checked;
+    });
+  }
 }
 
 reveal();
+
+copyCloseButton?.addEventListener("click", function () {
+  if (!this.disabled) {
+    backdrop1.classList.remove("active");
+    modalClosed = true;
+  }
+});
 
 // hamburger menu tablet
 

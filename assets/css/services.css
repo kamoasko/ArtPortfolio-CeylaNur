@@ -63,3 +63,75 @@
 .services__card:hover > .services__card-content > span {
   display: flex;
 }
+
+/* services detail */
+
+.services__wrapper {
+  margin-top: 6.5rem;
+  column-gap: 7.1rem;
+  row-gap: 5.8rem;
+  flex-wrap: wrap;
+}
+
+.services__warpper-img {
+  height: 52rem;
+  flex: 1;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.swd {
+  order: -1;
+}
+
+.services__wrapper-detail {
+  text-align: justify;
+  row-gap: 6rem;
+  flex: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .services__warpper-img {
+    height: 34.5rem;
+  }
+
+  .services__wrapper-detail {
+    row-gap: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .services__wrapper-detail > h2 {
+    font-size: 3.2rem;
+  }
+
+  .services__wrapper-detail > .btn {
+    width: 15rem;
+    height: 4.6rem;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services__wrapper {
+    flex-direction: column;
+  }
+
+  .services__wrapper-detail {
+    row-gap: 4rem;
+    font-size: 1.6rem;
+  }
+
+  .swd {
+    order: 0;
+  }
+
+  .services__wrapper-detail > h2 {
+    text-align: center;
+  }
+
+  .services__wrapper-detail > .btn {
+    width: 15.3rem;
+    height: 4rem;
+    margin: 0 auto;
+  }
+}

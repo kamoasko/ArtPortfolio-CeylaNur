@@ -281,30 +281,61 @@
           <form action="" class="form">
             <div class="form__top flex align-items-center">
               <div class="form__top-part flex flex-direct-col">
-                <input type="text" name="Ad" id="" placeholder="Ad:" />
-                <select
-                  class="select"
-                  name="Janr"
+                <input
+                  type="text"
+                  name="Ad"
                   id=""
-                  aria-placeholder="Janr"
-                >
-                  <option value="Portret">Portret</option>
-                  <option value="Portret">Rəngli karandaş</option>
-                </select>
-                <input type="email" name="Email" id="" placeholder="Email:" />
+                  placeholder="Ad:"
+                  aria-label=""
+                />
+                <label for="Janr">
+                  <select
+                    class="select"
+                    name="Janr"
+                    id=""
+                    aria-placeholder="Janr"
+                    aria-label=""
+                  >
+                    <option value="Portret">Portret</option>
+                    <option value="Portret">Rəngli karandaş</option>
+                  </select>
+                </label>
+                <input
+                  type="email"
+                  name="Email"
+                  id=""
+                  placeholder="Email:"
+                  aria-label=""
+                />
               </div>
+
               <div class="form__top-part flex flex-direct-col">
-                <input type="text" name="Soyad" id="" placeholder="Soyad:" />
-                <select
-                  class="select"
-                  name="Texnika"
+                <input
+                  type="text"
+                  name="Soyad"
                   id=""
-                  aria-placeholder="Texnika"
-                >
-                  <option value="Portret">Portret</option>
-                  <option value="Portret">Rəngli karandaş</option>
-                </select>
-                <input type="tel" name="tel" id="" placeholder="Nomrə:" />
+                  placeholder="Soyad:"
+                  aria-label=""
+                />
+                <label for="Texnika">
+                  <select
+                    class="select"
+                    name="Texnika"
+                    id=""
+                    aria-placeholder="Texnika"
+                    aria-label=""
+                  >
+                    <option value="Portret">Portret</option>
+                    <option value="Portret">Rəngli karandaş</option>
+                  </select>
+                </label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id=""
+                  placeholder="Nomrə:"
+                  aria-label=""
+                />
               </div>
             </div>
             <textarea
@@ -313,7 +344,10 @@
               cols="30"
               rows="10"
               placeholder="Təsviri"
-            ></textarea>
+              aria-label=""
+            >
+            </textarea>
+            <button class="btn flex-center">Gonder</button>
           </form>
         </div>
       </section>

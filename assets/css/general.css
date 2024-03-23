@@ -147,7 +147,7 @@
   cursor: pointer;
 }
 
-.header__top-langs > ul > li:hover > ul {
+.header__top-langs > ul > li.active > ul {
   opacity: 1;
   visibility: visible;
   transform: translate(-15%, 0);
@@ -555,6 +555,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .status {
+    width: 11.6rem;
+    height: 2.7rem;
+  }
+
   .header__top-langs {
     order: -1;
   }
@@ -624,6 +629,7 @@
     flex-direction: column;
     row-gap: 3.4rem;
     justify-content: stretch;
+    overflow-y: scroll;
   }
 
   body:has(.navbar.active) {

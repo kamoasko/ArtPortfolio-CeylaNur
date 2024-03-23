@@ -81,8 +81,13 @@ responsiveHamburger();
 
 // select langs
 
+let langSelect = document.querySelector(".header__top-langs > ul > li");
 let selectedLang = document.getElementById("selected_lang");
 let langOptions = document.querySelectorAll("#lang_option");
+
+langSelect.addEventListener("click", () => {
+  langSelect.classList.toggle("active");
+});
 
 function changeLanguage() {
   langOptions.forEach((lang) => {
@@ -103,20 +108,20 @@ changeLanguage();
 
 // navbar menu active class added active page
 
-let navbarMenuLinks = document.querySelectorAll(".navbar__menu>li>a");
-let navbarMenuList = document.querySelectorAll(".navbar__menu > li");
+// let navbarMenuLinks = document.querySelectorAll(".navbar__menu>li>a");
+// let navbarMenuList = document.querySelectorAll(".navbar__menu > li");
 
-function addActiveClass() {
-  const routeName = window.location.pathname;
-  navbarMenuList.forEach((li) => {
-    if (
-      routeName.slice(1, routeName.length - 5) === li.getAttribute("page-name")
-    ) {
-      li.classList.add("active");
-    } else {
-      li.classList.remove("active");
-    }
-  });
-}
+// function addActiveClass() {
+//   const routeName = window.location.pathname;
+//   navbarMenuList.forEach((li) => {
+//     if (
+//       routeName.slice(1, routeName.length - 5) === li.getAttribute("page-name")
+//     ) {
+//       li.classList.add("active");
+//     } else {
+//       li.classList.remove("active");
+//     }
+//   });
+// }
 
-addActiveClass();
+// addActiveClass();

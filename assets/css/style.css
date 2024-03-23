@@ -29,12 +29,14 @@ html {
   --color-white: #ffffff;
   --color-active: #f2c6b8;
   --color-green: #29bb5b;
+  --color-blue: #a8c7d5;
 
   --container-width-lg: 120rem;
 
   --main-font: "Plus Jakarta Sans", sans-serif, serif;
   /* --secondary-font: "Forum", sans-serif; */
   --secondary-font: "Playfair Display SC", sans-serif, serif;
+  --third-font: "Playfair Display", sans-serif, serif;
   --fourth-font: "Waterfall", sans-serif, serif;
   --fifth-font: "Whisper", cursive, sans-serif, serif;
   --sixth-font: "Katibeh", sans-serif, serif;

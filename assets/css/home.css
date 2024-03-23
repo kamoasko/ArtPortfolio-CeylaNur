@@ -337,11 +337,6 @@
     flex-direction: column;
   }
 
-  .contact__form > textarea {
-    margin-top: 9rem;
-    height: 21.3rem;
-  }
-
   .contact__form-inputs {
     flex-wrap: wrap;
     row-gap: 2.5rem;

@@ -38,7 +38,7 @@ function reveal() {
     });
   });
 
-  copyrightCheckbox.addEventListener("change", function () {
+  copyrightCheckbox?.addEventListener("change", function () {
     backdrop1.classList.remove("active");
     modalClosed = true;
   });

@@ -591,6 +591,11 @@
     height: 2.7rem;
   }
 
+  .contact__form > textarea {
+    margin-top: 9rem;
+    height: 21.3rem;
+  }
+
   .header__top-langs {
     order: -1;
   }
@@ -604,6 +609,7 @@
   }
 
   .navbar {
+    display: none;
     opacity: 0;
     background-color: var(--color-main);
     position: absolute;
@@ -640,6 +646,21 @@
     font-size: 2rem;
   }
 
+  .contact__form-inputs {
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 2rem;
+  }
+
+  .contact__form-inputs > input {
+    width: 100%;
+  }
+
+  .contact__form > textarea {
+    margin-top: 8.1rem;
+  }
+
   .modal__content {
     padding: 4rem;
   }
@@ -653,6 +674,7 @@
   }
 
   .navbar.active {
+    display: flex;
     opacity: 1;
   }
 

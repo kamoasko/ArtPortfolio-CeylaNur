@@ -446,16 +446,18 @@
 }
 
 .modal {
-  max-width: 93.7rem;
+  max-width: 90rem;
   background-color: var(--color-main);
   color: var(--color-white);
   overflow: hidden;
   padding: 2.9rem 2.4rem;
   position: relative;
+  overflow: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cm {
-  max-width: 120rem;
+  max-width: 90%;
   width: 80%;
   gap: 7.1rem;
   padding: 2.2rem;
@@ -570,6 +572,19 @@
   }
 }
 
+@media (max-width: 900px) {
+  .cm {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .modal__img {
+    max-width: 100%;
+  }
+  .modal__content {
+    text-align: left;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .status {
     width: 11.6rem;
@@ -602,6 +617,14 @@
 
   .navbar__menu > li > a {
     color: var(--color-white);
+  }
+
+  .modal {
+    flex-direction: column;
+  }
+
+  .modal__img {
+    height: 28rem;
   }
 
   .footer__bottom-wrapper {

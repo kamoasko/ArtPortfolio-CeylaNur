@@ -46,13 +46,6 @@ function reveal() {
 
 reveal();
 
-// copyCloseButton?.addEventListener("click", function () {
-//   if (!this.disabled) {
-//     backdrop1.classList.remove("active");
-//     modalClosed = true;
-//   }
-// });
-
 // hamburger menu tablet
 
 let hamburgerBtn = document.querySelector(".plate");
